@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Questão 04 - Maior idade</title>
+    </head>
+     
+    <body>
+        <h1>Questão 04 - Maior idade</h1>
+        <form>
+            Insira idade: <br/>
+            <input type="text" id="idade" name="idade"/><br/>  
+            <input type="button" value="Confirmar" onclick="maioridade()"/>  
+        </form>  
+    </body>
+    <script type="text/javascript">  
+        function maioridade(){  
+            var maioridade = 18
+            var idade=document.getElementById("idade").value;  
+            if(idade >= maioridade){
+                alert("Você é maior de idade."); 
+            }else{
+                alert("Você ainda não alcançou a maior idade."); 
+            } 
+        }  
+    </script> 
+    
+</html>
