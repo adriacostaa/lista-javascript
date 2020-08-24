@@ -41,10 +41,7 @@
                 resultadoText = "Obesidade grau III";
             }
 
-            console.log(resultadoText);
-            console.log(imc);
-
-            document.getElementById('resultado').innerHTML = resultadoText;
+            document.getElementById('resultado').innerHTML = (resultadoText + " IMC: "+ imc.toFixed(2));
         }  
     </script> 
     
