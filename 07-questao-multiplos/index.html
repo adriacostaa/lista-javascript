@@ -8,12 +8,11 @@
     <body>
         <h1>Questão 07 - Múltiplos</h1>
         <form>
-            Multiplos de:</br>
+            Múltiplos:</br>
             <input type="text" id="num1" name="num1"/><br/>  
             <input type="text" id="num2" name="num2"/><br/>  
-            Número máximo:</br> 
-            <input type="text" id="numax" name="numax"/><br/>  
-            Multiplos:</br> 
+            Número máximo:</br>
+            <input type="text" id="nummax" name="nummax"/><br/>  
             <button type="button" onclick="multiplos()"> Múltiplos</button>
         </form>  
         <h3>Resultado: </h3>
@@ -23,26 +22,22 @@
         function multiplos(){  
             var num1=document.getElementById("num1").value;  
             var num2=document.getElementById("num2").value; 
-            var numax=document.getElementById("numax").value;  
+            var nummax=document.getElementById("nummax").value;  
+            var text;
             num1 = parseFloat(num1);
             num2 = parseFloat(num2);
-            numax = parseInt(numax);
+            nummax = parseInt(nummax);
 
-            
-            while (cont <= numax ){
-                
-
-                if(cont % num1 == 0){
-                    document.getElementById('multiplo').innerHTML = (multiplo);
-                }else if (cont % num2 == 0){
+            for (cont=1; cont <= nummax; cont++){
+                if(cont % num1 === 0){
+                    text = "O número: "+ cont + " é múltiplo de "+num1;
+                    
+                }else if (cont % num2 === 0) {
+                    text = "O número: "+ cont + " é múltiplo de "+num2;
 
                 }
-            }
-            // int numero = 40;
-            // System.out.println(40 % 3);
-            // Se o resto da divisão for 0 (zero) então ele é multiplo:
-
-            // document.getElementById('multiplo').innerHTML = (multiplo);
+                
+            } 
         }  
     </script> 
     
