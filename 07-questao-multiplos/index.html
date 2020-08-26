@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Questão 07 - Múltiplos</title>
+    </head>
+     
+    <body>
+        <h1>Questão 07 - Múltiplos</h1>
+        <form>
+            Multiplos de:</br>
+            <input type="text" id="num1" name="num1"/><br/>  
+            <input type="text" id="num2" name="num2"/><br/>  
+            Número máximo:</br> 
+            <input type="text" id="numax" name="numax"/><br/>  
+            Multiplos:</br> 
+            <button type="button" onclick="multiplos()"> Múltiplos</button>
+        </form>  
+        <h3>Resultado: </h3>
+        <div id="resultado"></div>
+    </body>
+    <script type="text/javascript">  
+        function multiplos(){  
+            var num1=document.getElementById("num1").value;  
+            var num2=document.getElementById("num2").value; 
+            var numax=document.getElementById("numax").value;  
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            numax = parseInt(numax);
+
+            
+            while (cont <= numax ){
+                
+
+                if(cont % num1 == 0){
+                    document.getElementById('multiplo').innerHTML = (multiplo);
+                }else if (cont % num2 == 0){
+
+                }
+            }
+            // int numero = 40;
+            // System.out.println(40 % 3);
+            // Se o resto da divisão for 0 (zero) então ele é multiplo:
+
+            // document.getElementById('multiplo').innerHTML = (multiplo);
+        }  
+    </script> 
+    
+</html>
