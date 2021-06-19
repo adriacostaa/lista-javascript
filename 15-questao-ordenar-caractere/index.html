@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Questão 15 - Ordenar Caractere</title>
+    </head>
+     
+    <body>
+        <h1>Questão 15 - Ordenar Caractere</h1>
+        <form>
+            <button type="button" onclick="ordenar()"> Ordernar</button>
+            
+        </form>  
+        <div id='mostrar'></div>
+    </body>
+
+    <script type="text/javascript">        
+        function ordenar(){
+            let  animal = ['cachorro', 'gato', 'elefante', 'formiga', 'ave']  
+            str = animal.sort();
+            document.getElementById('mostrar').innerHTML = ("Resultado = "+ str);
+        }
+        
+    </script> 
+    
+</html>
+
+
