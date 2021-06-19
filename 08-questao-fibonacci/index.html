@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Questão 08 - Fibonacci</title>
+    </head>
+     
+    <body>
+        <h1>Questão 08 - Fibonacci</h1>
+        <form>
+            Limite da sequência Fibonacci:</br>
+            <input type="text" id="termo" name="termo"/><br/>  
+            <button type="button" onclick="fibonacci()"> Somar pares da sequencia</button>
+            
+        </form>  
+        <h3>Soma de pares da sequência: </h3>
+        <div id='somapares'></div>
+    </body>
+
+    <script type="text/javascript">  
+        function fibonacci(){  
+          let termo = parseInt(document.getElementById("termo").value);  
+          let penultimo = 0, ultimo = 1;
+          let soma=0, numero;
+      
+            for(let count = 3; count <=termo; count++){
+              numero = ultimo + penultimo;
+              if(numero >= termo){
+                break;
+              }else if(numero % 2 == 0){
+                soma += numero;
+              }
+              penultimo = ultimo;
+              ultimo = numero;
+            }
+            document.getElementById('somapares').innerHTML = ("Resultado = "+ soma);
+          }            
+        
+    </script> 
+    
+</html>
+
